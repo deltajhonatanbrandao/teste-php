@@ -15,7 +15,7 @@
 
 <?php
 // Configurações de conexão ao banco de dados PostgreSQL
-$host = 'IP POstgrsql'; // nome do serviço do contêiner PostgreSQL
+$host = '172.17.0.4'; // nome do serviço do contêiner PostgreSQL
 $dbname = 'postgress';
 $username = 'postgres';
 $password = '12345678';
