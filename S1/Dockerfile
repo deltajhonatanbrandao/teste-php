@@ -4,6 +4,7 @@ FROM php:8.0-apache
 # Instale as dependências para conectar ao PostgreSQL
 RUN apt-get update && apt-get install -y \
     libpq-dev \
+    vim \
     && docker-php-ext-install pdo_pgsql
 
 # Copie o código PHP para o diretório de trabalho do contêiner
