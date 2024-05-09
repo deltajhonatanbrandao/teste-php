@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install pdo_pgsql
 
 # Copie o código PHP para o diretório de trabalho do contêiner
-COPY index.php /var/www/html/
-
+#COPY index.php /var/www/html/
+COPY cccgms/. /var/www/html/
 # Expor a porta 80 para acesso web
 EXPOSE 80
